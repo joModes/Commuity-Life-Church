@@ -1,0 +1,174 @@
+<html>
+    <head>
+        <style>
+            *{
+                
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            }
+            body{
+            
+                     background: #FFF;
+               }
+             a{
+                
+             text-decoration: none;
+             color: #fff;
+             }
+             .container{
+                 
+             position: absolute;
+             top: 70%;
+             left: 30%;
+             transform: translate(-70%,-30%);
+             color: #fff;
+             font-weight: 600;
+             font-size: 18px;
+             }       
+            .button::before{
+                
+            content:"";
+            height: 100%;
+            width: 100%;
+            border-radius: 25px; 
+            top: 0;
+            left: -100%;
+            background: #5B13B9;
+            position: absolute;
+            }
+          .button{
+          position: absolute;
+          background: #7D2AE8;
+          height: 55px;
+          width: 270px;
+          border-radius: 25px; 
+          font-weight: 700;
+          font-size: 19px;
+          color: white;
+          box-shadow: 1px 1px 2px rgba(0,0,0.2);
+          transform: all 0.4s cubic-bezier(0.68, -0.55, 0.265,1.55);
+          overflow: hidden;
+          cursor: pointer;
+           } 
+           
+           .button .content{
+            height: 100%;
+            width: 100%;
+           display: flex;
+           align-items: center;
+           justify-content: center;
+           transition: all 0.2s ease;
+           transition-delay: 0.2;
+           }
+           
+           .active{
+               
+           height: 15px;
+          width: 270px;
+           }
+           
+           .button.active::before{
+               
+         animation: layer 3s ease-in-out forwards;
+           }
+           
+           @keyframes layer{
+               
+           100%{
+               left: 0%;
+               }
+           }
+            .button.active .content{
+                
+            transform: translateY(60px);
+            }
+            
+            .continue{
+                
+            color: black;
+            background: red;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            position: absolute;
+             top: 80%;
+             left: 50%;
+             transform: translate(-60%,-50%);
+             
+     
+            }
+            
+            .continue{
+                
+              display: none;
+              background:#7D2AE8;
+               padding: 10px 20px 10px;   
+                border-radius: 15px;
+            }
+            
+            @media(max-width: 450px){
+                
+        .container{
+                 
+             position: absolute;
+             top: 70%;
+             left: 10%;
+             transform: translate(-70%,-10%);
+             color: #fff;
+             font-weight: 600;
+             font-size: 18px;
+          }       
+
+            
+            }
+        </style> 
+    </head>
+        <body>
+            <div class = "container">
+                    <div class="button">
+                    <div class = "content">Load data</div>
+                        </div>
+                        </div>
+                            
+                         <div class="continue">
+                    <a href = "courses.html" class = "btn">start</a>
+                        </div>
+                        
+                   
+                      
+                            
+                        
+                            <script>
+                                
+                            let button = document.querySelector(".button");
+                            let start = document.querySelector(".btn");
+                            button.addEventListener("click" , ()=>{
+                                
+                            button.classList.add("active");
+                           
+                            setTimeout(()=>{
+                                
+                            button.classList.remove('active');
+                            document.querySelector('.button').style.display = 'none';
+                            },3000)
+                            
+                            start.classList.add("continue");
+                           
+                            setTimeout(()=>{
+                                
+                            start.classList.remove('continue');
+                            document.querySelector('.continue').style.display = 'block';
+                            },3400)
+                            
+                            })
+                            
+                            
+                        
+                            
+                            
+                           
+                
+                            </script>
+        </body>
+</html>

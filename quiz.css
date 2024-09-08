@@ -1,0 +1,282 @@
+
+*{    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    .logoimg{
+       
+    width: 100%;
+    height: 50px;
+    }
+   .header ul{
+        
+ list-style-type: none; 
+ display: flex;
+ margin-right: 10px;
+    }
+    
+    .header a{
+        
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    
+    }
+    
+   .header ul a:hover{
+       
+   text-decoration: underline;
+   transition: 0.4s;
+   text-decoration-color: red;
+  text-underline-position: auto;
+   }
+   .header li{
+       
+   margin-left: 1em;
+   }
+   
+   .header{
+       
+   width: 100%;
+   position: fixed;
+   display: flex;
+   justify-content: space-between;
+  padding: 0vw 5vw;
+   background: black;
+   box-shadow: 2px 1px  2px 1px rgb(225, 235, 225);
+   height: 100px;
+   align-items: center;
+   right: 0;
+   left: 0;
+   }
+   
+   .header .sign-btn{
+
+   margin-left: 10px;
+   padding: 5px 10px;
+   background: #000000;
+   font-weight: 500;
+   color: white;
+   border: solid 2px #9037FF;
+   background-color: #9037FF;
+   }
+   .header .sign-btn:hover{
+                  
+       border: solid 2px #FFA800BE;
+      }
+   .header input{
+   width: 120px;
+   height: 30px;
+   border: none;
+   background: #fff;
+   outline: none;
+   border-radius: 5px;
+   margin-bottom: 18px;
+   }
+   
+   
+
+.navheader ul ul{
+  
+display: none;
+background-color: #EAF9FF;
+width: 150px;
+}    
+    .navheader ul ul li{
+        
+     line-height: 30px;
+     display: block;   
+    }
+                                   
+.navheader ul li:hover ul{
+  
+display: block;
+position: absolute;
+top: 100px;
+align-items: center;
+} 
+
+.navheader ul li:hover ul ul{
+        
+display: none;            
+}
+.navheader ul  ul li:hover ul{
+ 
+display: block;
+background-color: transparent;
+position: relative;
+margin-left: 30px;
+font-family: Times New Roman;
+top: 0;                                    
+}
+.navheader ul  ul li:hover ul a{
+ 
+font-weight: 400;
+color: black;
+}
+.navheader ul  ul li:hover ul{     
+margin-top:2vw;
+margin-bottom: 2vw;
+}
+.largeicon{
+
+height: 20px;
+width: 20px;
+margin-top: 8px;
+cursor: pointer;
+}                                   
+#home{
+
+display: flex;
+justify-content: center;
+height: 100vh;
+text-align: center;
+align-items: center;
+margin-bottom: 8vw;
+}               
+/*
+.container{
+position: absolute;
+top: 80%;
+left: 50%;
+transform: translate(-50%, -80%);
+}
+*/
+.form-head{
+
+padding-top: 12px;
+width: 100%;
+height: 80px;
+border-top-right-radius: 10px;
+border-top-left-radius: 10px;
+}
+form h4{
+
+margin-top: 30px;
+}
+form{
+
+margin-top: 100px;
+background: #fff;
+text-align: center;
+border-radius: 10px;
+text-align: center;
+box-shadow: 2px 2px  2px 2px rgba(0, 0, 0, 0.2);
+padding: 50px;
+width: 650px;
+}
+form h2{
+
+    font-size: 18px;
+    color: #001e4d;
+    font-weight: 600;
+
+}
+.btn{
+
+    background-color: #fff;
+    color: #222;
+    font-weight: 500;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #222;
+    text-align: left;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+    outline: none;
+
+}
+
+.btn:hover{
+    background-color: #222;
+    color: #fff;
+}
+
+#next-btn{
+
+    width: 150px;
+    color: white;
+    background-color: #001e4d;
+    border: 0;
+     font-weight: 500;
+     cursor: pointer;
+     display: block;
+     margin: 20px auto 0;
+     padding: 10px;
+    }
+    
+.correct{
+
+    background: #9aeabc;
+}   
+.incorrect{
+
+    background: #ff9393;
+}
+
+.btn:hover:not([disabled]){
+
+    background-color: #222;
+    color: #fff;
+    
+}
+.btn:disabled{
+
+    cursor: no-drop;
+
+}
+
+
+/*
+@media(max-width: 768px){
+
+.btn{
+
+display: none;
+}
+
+.navheader ul{
+
+position: absolute;
+display: flex;
+height: 200vh;
+top: 0;
+right: -190px;
+width: 190px;       
+flex-direction: column;
+justify-content: flex-start;
+align-items: flex-start;
+transition: all 0.3s ease;
+background: rgba(17, 20, 104,0.45);
+background-filter: blur(4px);              
+border-radius: 5px;
+overflow-y: scroll;
+scroll-snap-type: x mandatory;
+display: none;
+    }
+.navheader ul li{
+        
+    padding-top: 14px;
+    padding-bottom: 14px;
+     border-top: solid 1px #fff;
+     display: block;   
+     width: 100%;
+     text-align: center;
+    margin: 0;
+    }
+    
+    .head a{
+        
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    margin-left: 12px;
+    }
+*/
+
+
